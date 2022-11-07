@@ -6,7 +6,7 @@
 /*   By: luntiet- <luntiet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 14:55:43 by luntiet-          #+#    #+#             */
-/*   Updated: 2022/10/22 20:12:56 by luntiet-         ###   ########.fr       */
+/*   Updated: 2022/11/07 14:22:44 by luntiet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,7 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	str = ft_calloc(ft_count_words(s, c) + 1, sizeof(char *));
-	if (!str || !s)
+	if (!str)
 		return (NULL);
 	i = 0;
 	j = 0;
