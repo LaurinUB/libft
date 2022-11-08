@@ -6,7 +6,7 @@
 /*   By: luntiet- <luntiet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 08:33:12 by luntiet-          #+#    #+#             */
-/*   Updated: 2022/10/28 18:29:29 by luntiet-         ###   ########.fr       */
+/*   Updated: 2022/11/08 10:58:13 by luntiet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*element;
 
+	if (!content)
+		return (NULL);
 	element = (t_list *)malloc(sizeof(t_list));
 	if (!element)
 		return (NULL);
