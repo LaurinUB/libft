@@ -6,7 +6,7 @@
 #    By: luntiet- <luntiet-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/13 09:37:40 by luntiet-          #+#    #+#              #
-#    Updated: 2022/11/08 10:01:54 by luntiet-         ###   ########.fr        #
+#    Updated: 2022/11/08 10:35:52 by luntiet-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -83,13 +83,13 @@ OBJPRINTF = $(SRCPRINTF:.c=.o)
 
 OBJGNL = $(SRCGNL:.c=.o)
 
-$(NAME): $(OBJ) $(OBJPRINTF) $(OBJGNL)
+all: $(NAME)
+
+$(NAME): $(OBJ) $(OBJPRINTF) $(OBJGNL) $(OBJLST)
 	@ar rcs $(NAME) $(OBJ) $(OBJLST) $(OBJPRINTF) $(OBJGNL)
 
 %.o : %.c
 		@$(CC) -c $(CFLAGS) $< -o $@
-
-all: $(NAME)
 
 clean:
 	@rm -f $(OBJ) $(OBJLST) $(OBJPRINTF) $(OBJGNL)
