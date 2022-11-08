@@ -6,7 +6,7 @@
 #    By: luntiet- <luntiet-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/13 09:37:40 by luntiet-          #+#    #+#              #
-#    Updated: 2022/11/07 11:28:58 by luntiet-         ###   ########.fr        #
+#    Updated: 2022/11/08 10:01:54 by luntiet-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,7 +51,7 @@ SRC = ft_toupper.c \
 			ft_putendl_fd.c \
 			ft_split.c
 
-SRCBONUS = ft_lstnew.c \
+SRCLST = ft_lstnew.c \
 			ft_lstsize.c \
 			ft_lstlast.c \
 			ft_lstdelone.c \
@@ -77,29 +77,26 @@ SRCGNL= ./gnl/get_next_line.c \
 
 OBJ = $(SRC:.c=.o)
 
-OBJBONUS = $(SRCBONUS:.c=.o)
+OBJLST = $(SRCLST:.c=.o)
 
 OBJPRINTF = $(SRCPRINTF:.c=.o)
 
 OBJGNL = $(SRCGNL:.c=.o)
 
 $(NAME): $(OBJ) $(OBJPRINTF) $(OBJGNL)
-	@ar rcs $(NAME) $(OBJ)
+	@ar rcs $(NAME) $(OBJ) $(OBJLST) $(OBJPRINTF) $(OBJGNL)
 
 %.o : %.c
 		@$(CC) -c $(CFLAGS) $< -o $@
 
 all: $(NAME)
 
-bonus: $(OBJBONUS)
-	@ar rcs $(NAME) $(OBJBONUS) $(OBJPRINTF) $(OBJGNL)
-
 clean:
-	@rm -f $(OBJ) $(OBJBONUS) $(OBJPRINTF) $(OBJGNL)
+	@rm -f $(OBJ) $(OBJLST) $(OBJPRINTF) $(OBJGNL)
 
 fclean: clean
 	@rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re
