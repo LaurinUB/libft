@@ -6,7 +6,7 @@
 /*   By: luntiet- <luntiet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 09:39:42 by luntiet-          #+#    #+#             */
-/*   Updated: 2022/11/07 17:39:16 by luntiet-         ###   ########.fr       */
+/*   Updated: 2022/11/08 10:41:52 by luntiet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
+# include "./printf/ft_printf.h"
+# include "./gnl/get_next_line.h"
 
 typedef struct s_list
 {

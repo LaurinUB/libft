@@ -6,7 +6,7 @@
 /*   By: luntiet- <luntiet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 13:11:53 by luntiet-          #+#    #+#             */
-/*   Updated: 2022/11/07 11:08:35 by luntiet-         ###   ########.fr       */
+/*   Updated: 2022/11/08 10:42:50 by luntiet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int		ft_print_ptr(va_list arg);
 int		ft_print_x(va_list arg);
 int		ft_print_bigx(va_list arg);
 int		ft_counthex(int ptr, int count);
-int		ft_puthex(long long hex, int ptr);
+void	ft_puthex(long long hex, int istoupper);
 int		ft_print_udec(va_list arg);
 
 #endif

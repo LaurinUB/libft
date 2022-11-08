@@ -6,25 +6,13 @@
 /*   By: luntiet- <luntiet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 13:43:55 by luntiet-          #+#    #+#             */
-/*   Updated: 2022/11/01 09:35:15 by luntiet-         ###   ########.fr       */
+/*   Updated: 2022/11/08 10:43:44 by luntiet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-size_t	ft_strlen(const char *str)
-{
-	size_t	length;
-
-	length = 0;
-	if (!str)
-		return (0);
-	while (str[length] != '\0')
-		length++;
-	return (length);
-}
-
-char	*ft_strchr(char *s, int c)
+char	*ft_strchr_gnl(char *s, int c)
 {
 	unsigned char	cc;
 	int				i;
@@ -44,7 +32,7 @@ char	*ft_strchr(char *s, int c)
 	return (NULL);
 }
 
-char	*ft_strjoin(char *left_str, char *buff)
+char	*ft_strjoin_gnl(char *left_str, char *buff)
 {
 	size_t	i;
 	size_t	j;
