@@ -6,7 +6,7 @@
 /*   By: luntiet- <luntiet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 18:14:27 by luntiet-          #+#    #+#             */
-/*   Updated: 2022/10/24 10:31:11 by luntiet-         ###   ########.fr       */
+/*   Updated: 2022/11/25 13:57:16 by luntiet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;
 	size_t	j;
-	size_t	n;
 	size_t	s1len;
 	char	*trimmed;
 
@@ -53,7 +52,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	s1len = ft_strlen(s1);
 	i = 0;
 	j = s1len - 1;
-	n = 0;
 	while (ft_ispartofstr(s1[i], set) && s1[i])
 		i++;
 	while (ft_ispartofstr(s1[j], set) && s1[i] && i < j)
