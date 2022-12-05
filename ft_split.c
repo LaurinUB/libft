@@ -6,7 +6,7 @@
 /*   By: luntiet- <luntiet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 14:55:43 by luntiet-          #+#    #+#             */
-/*   Updated: 2022/11/07 14:22:44 by luntiet-         ###   ########.fr       */
+/*   Updated: 2022/12/05 10:53:11 by luntiet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ static int	ft_count_words(const char *str, char c)
 
 	i = 0;
 	trigger = 0;
-	if (!ft_isprint(c))
+	if (c == 0)
 		return (1);
 	while (*str)
 	{
