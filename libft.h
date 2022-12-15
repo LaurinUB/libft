@@ -6,7 +6,7 @@
 /*   By: luntiet- <luntiet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 09:39:42 by luntiet-          #+#    #+#             */
-/*   Updated: 2022/11/08 10:41:52 by luntiet-         ###   ########.fr       */
+/*   Updated: 2022/12/15 17:12:56 by luntiet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,7 @@ int			ft_toupper(int c);
 int			ft_tolower(int c);
 char		*ft_itoa(int n);
 int			ft_atoi(const char *str);
+long		ft_atol(char *str);
 //list functions
 t_list		*ft_lstlast(t_list *lst);
 t_list		*ft_lstnew(void *content);
