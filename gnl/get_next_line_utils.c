@@ -6,31 +6,11 @@
 /*   By: luntiet- <luntiet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 13:43:55 by luntiet-          #+#    #+#             */
-/*   Updated: 2022/11/08 10:43:44 by luntiet-         ###   ########.fr       */
+/*   Updated: 2022/12/19 20:44:04 by luntiet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-
-char	*ft_strchr_gnl(char *s, int c)
-{
-	unsigned char	cc;
-	int				i;
-
-	cc = (unsigned char)c;
-	i = 0;
-	if (!s)
-		return (NULL);
-	if (cc == '\0')
-		return ((char *)&s[ft_strlen(s)]);
-	while (s[i])
-	{
-		if (s[i] == cc)
-			return ((char *)&s[i]);
-		i++;
-	}
-	return (NULL);
-}
 
 char	*ft_strjoin_gnl(char *left_str, char *buff)
 {

@@ -6,7 +6,7 @@
 /*   By: luntiet- <luntiet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 13:43:50 by luntiet-          #+#    #+#             */
-/*   Updated: 2022/11/08 10:45:03 by luntiet-         ###   ########.fr       */
+/*   Updated: 2022/12/19 20:43:15 by luntiet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,5 @@
 # endif
 
 char	*get_next_line(int fd);
-char	*ft_strchr_gnl(char *s, int c);
 char	*ft_strjoin_gnl(char *left_str, char *s);
 #endif

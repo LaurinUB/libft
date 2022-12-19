@@ -6,7 +6,7 @@
 /*   By: luntiet- <luntiet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 09:18:30 by luntiet-          #+#    #+#             */
-/*   Updated: 2022/10/20 17:56:30 by luntiet-         ###   ########.fr       */
+/*   Updated: 2022/12/19 20:46:39 by luntiet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ t_list	*ft_lstlast(t_list *lst)
 	if (!lst)
 		return (lst);
 	while (lst->next)
-	{
 		lst = lst->next;
-	}
 	return (lst);
 }

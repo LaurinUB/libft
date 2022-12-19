@@ -6,7 +6,7 @@
 /*   By: luntiet- <luntiet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 17:33:55 by luntiet-          #+#    #+#             */
-/*   Updated: 2022/10/28 18:21:48 by luntiet-         ###   ########.fr       */
+/*   Updated: 2022/12/19 20:47:58 by luntiet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		{
 			j++;
 			if (!needle[j])
-			{
 				return ((char *)&haystack[i]);
-			}
 		}
 		i++;
 	}

@@ -6,7 +6,7 @@
 /*   By: luntiet- <luntiet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 13:43:53 by luntiet-          #+#    #+#             */
-/*   Updated: 2022/11/08 10:43:29 by luntiet-         ###   ########.fr       */
+/*   Updated: 2022/12/19 20:43:42 by luntiet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char	*ft_readbuff(int fd, char *buff)
 	if (!tmp)
 		return (NULL);
 	byte_size = 1;
-	while (!ft_strchr_gnl(buff, '\n') && byte_size != 0)
+	while (!ft_strchr(buff, '\n') && byte_size != 0)
 	{
 		byte_size = read(fd, tmp, BUFFER_SIZE);
 		if (byte_size == -1)
