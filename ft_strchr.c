@@ -23,7 +23,7 @@ char	*ft_strchr(const char *s, int c)
 		return (NULL);
 	if (cc == '\0')
 		return ((char *)s);
-	while (*s)
+	while (s[i])
 	{
 		if (s[i] == cc)
 			return ((char *)&s[i]);
