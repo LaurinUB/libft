@@ -6,7 +6,7 @@
 /*   By: luntiet- <luntiet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 09:39:42 by luntiet-          #+#    #+#             */
-/*   Updated: 2022/12/15 17:12:56 by luntiet-         ###   ########.fr       */
+/*   Updated: 2023/03/29 17:54:35 by luntiet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
+# include <math.h>
 # include "./printf/ft_printf.h"
 # include "./gnl/get_next_line.h"
 
@@ -34,6 +35,7 @@ int			ft_isalnum(int c);
 int			ft_isascii(int c);
 int			ft_isdigit(int c);
 int			ft_isprint(int c);
+int			is_number(char *str);
 //mem and allocation stuff
 void		*ft_calloc(size_t count, size_t size);
 void		ft_bzero(void *s, size_t n);
@@ -57,10 +59,13 @@ char		*ft_strtrim(char const *s1, char const *set);
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void		ft_striteri(char *s, void (*f)(unsigned int, char*));
 char		**ft_split(char const *s, char c);
+size_t		ft_stra_len(char **arr);
+void		ft_free_stra(char **str);
 //conversion functions
 int			ft_toupper(int c);
 int			ft_tolower(int c);
 char		*ft_itoa(int n);
+double		ft_strtod(char *str);
 int			ft_atoi(const char *str);
 long		ft_atol(char *str);
 //list functions

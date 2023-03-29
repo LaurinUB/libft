@@ -6,7 +6,7 @@
 #    By: luntiet- <luntiet-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/13 09:37:40 by luntiet-          #+#    #+#              #
-#    Updated: 2022/12/15 17:16:02 by luntiet-         ###   ########.fr        #
+#    Updated: 2023/03/29 17:57:56 by luntiet-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,7 +50,11 @@ SRC = ft_toupper.c \
 			ft_putnbr_fd.c \
 			ft_putendl_fd.c \
 			ft_split.c \
-			ft_atol.c
+			ft_atol.c \
+			ft_stra_free.c \
+			ft_stra_len.c \
+			is_number.c \
+			ft_strtod
 
 SRCLST = ft_lstnew.c \
 			ft_lstsize.c \
