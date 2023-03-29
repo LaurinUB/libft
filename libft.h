@@ -6,7 +6,7 @@
 /*   By: luntiet- <luntiet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 09:39:42 by luntiet-          #+#    #+#             */
-/*   Updated: 2023/03/29 17:54:35 by luntiet-         ###   ########.fr       */
+/*   Updated: 2023/03/29 18:02:20 by luntiet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void		ft_striteri(char *s, void (*f)(unsigned int, char*));
 char		**ft_split(char const *s, char c);
 size_t		ft_stra_len(char **arr);
+void		ft_free_stra(char **str);
 void		ft_free_stra(char **str);
 //conversion functions
 int			ft_toupper(int c);
