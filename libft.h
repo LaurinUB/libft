@@ -6,7 +6,7 @@
 /*   By: luntiet- <luntiet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 09:39:42 by luntiet-          #+#    #+#             */
-/*   Updated: 2023/03/29 18:02:20 by luntiet-         ###   ########.fr       */
+/*   Updated: 2023/04/04 12:46:26 by luntiet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ int			ft_isascii(int c);
 int			ft_isdigit(int c);
 int			ft_isprint(int c);
 int			is_number(char *str);
+int			ft_iswhitespcs(char c);
 //mem and allocation stuff
 void		*ft_calloc(size_t count, size_t size);
 void		ft_bzero(void *s, size_t n);
@@ -62,6 +63,7 @@ char		**ft_split(char const *s, char c);
 size_t		ft_stra_len(char **arr);
 void		ft_free_stra(char **str);
 void		ft_free_stra(char **str);
+char		**ft_split_whitespcs(char const *s);
 //conversion functions
 int			ft_toupper(int c);
 int			ft_tolower(int c);
