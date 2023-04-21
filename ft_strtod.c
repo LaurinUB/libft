@@ -6,7 +6,7 @@
 /*   By: luntiet- <luntiet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/29 17:53:03 by luntiet-          #+#    #+#             */
-/*   Updated: 2023/04/21 11:25:38 by luntiet-         ###   ########.fr       */
+/*   Updated: 2023/04/21 11:36:03 by luntiet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,6 @@ double	ft_strtod(char *str)
 	res = pre + (post / pow(10, ft_strlen(split[1])));
 	if (str[0] == '-')
 		res = -res;
+	ft_free_stra(split);
 	return (res);
 }
